@@ -1,0 +1,96 @@
+#chat-container {
+	width: 405px;
+	height: 550px;
+	float: right;
+	padding: 10px;
+	background-color: #745114;
+}
+
+#chatting-box {
+	position: relative;
+	width: 100%;
+	height: 410px;
+	overflow: hidden;
+	background-color: #8b6627;
+}
+
+#chatting-contents {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	transition: .2s bottom;
+}
+
+#chatting-contents li {
+	width: 100%;
+	overflow: hidden;
+}
+
+#chatting-contents p {
+	max-width: 325px;
+	min-height: 50px;
+	background-color: #ffdd40;
+	margin-bottom: 20px;
+	padding: 10px;
+	font-size: 15px;
+	line-height: 25px;
+	color: #000;
+	word-break: break-all;
+}
+
+#chatting-contents .chatting-contents-left p {
+	float: left;
+}
+
+#chatting-contents .chatting-contents-right p {
+	float: right;
+}
+
+#chatting-contents .chatting-contents-info p,
+#chatting-contents .chatting-contents-error p {
+	max-width: 100%;
+	min-height: 30px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 13px;
+	padding: 5px 0;
+}
+
+#chatting-contents .chatting-contents-error p {
+	background-color: #8c1910;
+	color: #fff;
+}
+
+#chatting-form,
+#chatting-button-group {
+	width: 100%;
+	height: 50px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+#chatting-form-input {
+	width: 100%;
+	height: 100%;
+	padding: 0 10px;
+	line-height: 50px;
+}
+
+#speech-button,
+#speech-recognition-button {
+	height: 100%;
+	background-color: #3d2906;
+	line-height: 50px;
+	color: #fff;
+}
+
+#speech-button {
+	width: 188px;
+	float: left;
+}
+
+#speech-recognition-button {
+	width: 189px;
+	float: right;
+}

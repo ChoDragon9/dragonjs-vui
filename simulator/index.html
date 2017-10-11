@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>Voice User Interface</title>
+	<link rel="stylesheet" href="./font/notosans.css">
+	<link rel="stylesheet" href="./styles/main.css">
+	<link rel="stylesheet" href="./styles/peach-face.css">
+	<link rel="stylesheet" href="./styles/chat.css">
+</head>
+<body>
+	<div id="wrapper">
+		<div id="peach-face-container">
+			<div id="peach-body">
+				<div id="peach-face">
+					<div id="peach-face-left-eye"></div>
+					<div id="peach-face-right-eye"></div>
+					<div id="peach-face-left-cheek"></div>
+					<div id="peach-face-right-cheek"></div>
+					<div id="peach-face-mouse">
+						<div id="peach-face-mouse-tongue"></div>
+						<div id="peach-face-mouse-tooth"></div>
+					</div>
+				</div>
+				<div id="peach-clothes">
+					<div id="peath-clothes-line"></div>
+					<div class="peath-clothes-button">
+						<div class="peath-clothes-button-hole"></div>
+						<div class="peath-clothes-button-hole"></div>
+						<div class="peath-clothes-button-hole"></div>
+						<div class="peath-clothes-button-hole"></div>
+					</div>
+					<div class="peath-clothes-button">
+						<div class="peath-clothes-button-hole"></div>
+						<div class="peath-clothes-button-hole"></div>
+						<div class="peath-clothes-button-hole"></div>
+						<div class="peath-clothes-button-hole"></div>
+					</div>
+					<div class="peath-clothes-button">
+						<div class="peath-clothes-button-hole"></div>
+						<div class="peath-clothes-button-hole"></div>
+						<div class="peath-clothes-button-hole"></div>
+						<div class="peath-clothes-button-hole"></div>
+					</div>
+					<div class="peath-clothes-button">
+						<div class="peath-clothes-button-hole"></div>
+						<div class="peath-clothes-button-hole"></div>
+						<div class="peath-clothes-button-hole"></div>
+						<div class="peath-clothes-button-hole"></div>
+					</div>
+				</div>
+				<div id="peach-left-arm">
+					<div class="peach-nail"></div>
+					<div class="peach-nail"></div>
+				</div>
+				<div id="peach-right-arm">
+					<div class="peach-nail"></div>
+					<div class="peach-nail"></div>
+				</div>
+				<div id="peach-left-leg">
+					<div class="peach-nail"></div>
+					<div class="peach-nail"></div>
+				</div>
+				<div id="peach-right-leg">
+					<div class="peach-nail"></div>
+					<div class="peach-nail"></div>
+				</div>
+			</div>
+			<div id="speech-recognition-toggle">
+				<button 
+					type="button" 
+					id="speech-recognition-toggle-button">
+					음성인식 활성화
+				</button>
+			</div>
+		</div>
+		<div id="chat-container">
+			<div id="chatting-box">
+				<ul id="chatting-contents">
+				</ul>
+			</div>
+			<div id="chatting-form">
+				<input type="text" id="chatting-form-input">
+			</div>
+			<div id="chatting-button-group">
+				<button
+					id="speech-button"
+					type="button">
+					텍스트 말하기
+				</button>
+				<button
+					id="speech-recognition-button"
+					type="button">
+					텍스트 인식하기
+				</button>
+			</div>
+		</div>
+	</div>
+	
+	<script src="../modules/pub-sub-manager.js"></script>
+	<script src="../modules/recognition-manager.js"></script>
+	<script src="../modules/speech-manager.js"></script>
+	<script src="./scripts/common.js"></script>
+	<script src="./scripts/speech-recognition.js"></script>
+	<script src="./scripts/speech-synthesis.js"></script>
+	<script src="./scripts/main.js"></script>
+</body>
+</html>

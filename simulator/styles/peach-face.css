@@ -1,0 +1,272 @@
+#peach-face-container {
+	width: 405px;
+	height: 550px;
+	float: left;
+	padding: 10px;
+	background-color: #efb7b9;
+}
+
+#peach-body {
+	position: relative;
+	width: 100%;
+	height: 470px;
+	overflow: hidden;
+	background-color: #ff8c79;
+	border: solid 2px #170503;
+}
+
+#peach-body div {
+	position: absolute;
+}
+
+#peach-face {
+	position: absolute;
+	left: 80px;
+	top: 65px;
+	width: 225px;
+	height: 225px;
+	background-color: #f9c6c5;
+	transition: .5s background-color;
+	border: solid 2px #170503;
+}
+
+#peach-face-left-eye,
+#peach-face-right-eye {
+	top: 74px;
+	width: 28px;
+	height: 22px;
+	background-color: #442e06;
+}
+
+#peach-face-left-eye {
+	left: 40px;
+}
+
+#peach-face-right-eye {
+	right: 40px;
+}
+
+#peach-face-left-cheek,
+#peach-face-right-cheek {
+	top: 109px;
+	width: 50px;
+	height: 27px;
+	background-color: #f9696b;
+	transition: .5s background-color;
+}
+
+#peach-face-left-cheek {
+	left: 18px;
+}
+
+#peach-face-right-cheek {
+	right: 18px;
+}
+
+#peach-face-mouse {
+	top: 123px;
+	left: 86px;
+	width: 52px;
+	height: 37px;
+	background-color: #a23233;
+}
+
+#peach-face.speaking #peach-face-mouse {
+	animation: speaking 1s infinite;
+}
+
+@keyframes speaking {
+    0% {
+		height: 37px;
+	}
+
+    50% {
+    	height: 45px;
+    }
+
+    100% {
+		height: 37px;
+	}
+}
+
+#peach-face.listening {
+	background-color: #f59695;
+}
+
+#peach-face.listening #peach-face-left-cheek,
+#peach-face.listening #peach-face-right-cheek {
+	background-color: #cb3d3e;
+}
+
+#peach-face-mouse-tooth {
+	top: 0px;
+	left: 15px;
+	width: 22px;
+	height: 11px;
+	background-color: #fff;
+}
+
+#peach-face-mouse-tongue {
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 18px;
+	background-color: #802121;
+}
+
+.peach-nail {
+	background-color: #170503;
+}
+
+#peach-left-arm, 
+#peach-right-arm {
+	position: absolute;
+	top: 330px;
+	width: 135px;
+	height: 47px;
+	border: solid 2px #170503;
+	background-color: #f9c6c5;
+}
+
+#peach-left-arm .peach-nail,
+#peach-right-arm .peach-nail {
+	width: 14px;
+	height: 3px;
+}
+
+#peach-left-arm .peach-nail:first-child,
+#peach-right-arm .peach-nail:first-child {
+	top: 12px;
+}
+
+#peach-left-arm .peach-nail:last-child,
+#peach-right-arm .peach-nail:last-child {
+	bottom: 12px;
+}
+
+#peach-left-arm {
+	left: 30px;
+	transform: rotate(195deg);
+}
+
+#peach-right-arm {
+	right: 30px;
+	transform: rotate(-15deg);
+}
+
+#peach-left-leg,
+#peach-right-leg {
+	position: absolute;
+	bottom: 0;
+	width: 45px;
+	height: 55px;
+	border: solid 2px #170503;
+	border-bottom: 0;
+	background-color: #f9c6c5;
+}
+
+#peach-left-leg {
+	left: 95px;
+}
+
+#peach-right-leg {
+	right: 95px;
+}
+
+#peach-left-leg .peach-nail, 
+#peach-right-leg .peach-nail {
+	width: 2px;
+	height: 14px;
+}
+
+#peach-left-leg .peach-nail:first-child,
+#peach-right-leg .peach-nail:first-child {
+	left: 13px;
+} 
+
+#peach-left-leg .peach-nail:last-child,
+#peach-right-leg .peach-nail:last-child {
+	right: 13px;
+}
+
+#peach-clothes {
+	position: absolute;
+	left: 181px;
+	bottom: 0;
+	width: 19px;
+	height: 176px;
+}
+
+#peath-clothes-line {
+	left: 9px;
+	width: 2px;
+	height: 100%;
+	background-color: #170503;
+}
+
+.peath-clothes-button {
+	left: 0;
+	width: 19px;
+	height: 19px;
+	border: solid 2px #170503;
+	background-color: #f9c6c5;
+}
+
+.peath-clothes-button:nth-of-type(2) {
+	top: 38px;
+}
+
+.peath-clothes-button:nth-of-type(3) {
+	top: 66px;
+}
+
+.peath-clothes-button:nth-of-type(4) {
+	top: 94px;
+}
+
+.peath-clothes-button:nth-of-type(5) {
+	top: 122px;
+}
+
+.peath-clothes-button-hole {
+	width: 3px;
+	height: 3px;
+	background-color: #170503;
+}
+
+.peath-clothes-button .peath-clothes-button-hole:nth-of-type(1),
+.peath-clothes-button .peath-clothes-button-hole:nth-of-type(2) {
+	top: 3px;
+}
+
+.peath-clothes-button .peath-clothes-button-hole:nth-of-type(1),
+.peath-clothes-button .peath-clothes-button-hole:nth-of-type(3) {
+	left: 3px;
+}
+
+.peath-clothes-button .peath-clothes-button-hole:nth-of-type(4),
+.peath-clothes-button .peath-clothes-button-hole:nth-of-type(3) {
+	bottom: 3px;
+}
+
+.peath-clothes-button .peath-clothes-button-hole:nth-of-type(2),
+.peath-clothes-button .peath-clothes-button-hole:nth-of-type(4) {
+	right: 3px;
+}
+
+#speech-recognition-toggle {
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+	margin-top: 10px;
+}
+
+#speech-recognition-toggle-button {
+	width: 100%;
+	height: 100%;
+	float: left;
+	background-color: #a23233;
+	line-height: 50px;
+
+	color: #fff;
+}
