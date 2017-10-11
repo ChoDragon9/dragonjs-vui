@@ -18,6 +18,7 @@
     "node": ">=4.6.0"
   },
   "scripts": {
-    "test": "grunt connect:app"
+    "test": "grunt connect:app",
+    "coverage": "karma start coverage.conf.js"
   }
 }
